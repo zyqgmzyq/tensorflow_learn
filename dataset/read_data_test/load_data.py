@@ -6,21 +6,8 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 label_dir = "./list.txt"
 train_dir = "./image/"
-# train_dir = "/home/mvl/Dataset/ColorConstancy/Cube/JPG/"
-# label_dir = "/home/mvl/Dataset/ColorConstancy/Cube/cube_gt.txt"
-# img_height = 3456
-# img_width = 5184
-
 tf_file = "train.records"
-# tf_file1 = "train1.tfrecords"
-# tf_file2 = "train2.tfrecords"
-# tf_file3 = "train3.tfrecords"
-# train1_dir = "/home/mvl/Dataset/ColorConstancy/Cube/jpg1/"
-# train2_dir = "/home/mvl/Dataset/ColorConstancy/Cube/jpg2/"
-# train3_dir = "/home/mvl/Dataset/ColorConstancy/Cube/jpg3/"
-# label1_dir = "/home/mvl/Dataset/ColorConstancy/Cube/cube_gt1.txt"
-# label2_dir = "/home/mvl/Dataset/ColorConstancy/Cube/cube_gt2.txt"
-# label3_dir = "/home/mvl/Dataset/ColorConstancy/Cube/cube_gt3.txt"
+
 
 def write(filename, train_name, label_name, img_width, img_height):
     writer = tf.python_io.TFRecordWriter(filename)
